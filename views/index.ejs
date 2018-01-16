@@ -2,12 +2,15 @@
 <html>
   <head>
     <title><%= title %></title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
     <div class="page">
       <h1 class="page_title"><%= title %></h1>
       <h3 class="page_subtitle">But I was wondering if you wanted to get a drink and go bowling sometime? Like, this weekend maybe?</h3>
+
+      <br><br>
 
       <button class="btn btn-medium btn-blue btn-radius" onclick="sendYes()">YES!</button>
 
@@ -48,8 +51,15 @@ function sendNo() {
   </script>
 
   <style>
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
 .page {
   text-align: center;
+}
+
+.page_subtitle {
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 *, *:before, *:after {
